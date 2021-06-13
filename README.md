@@ -16,6 +16,7 @@ python3 manage.py runserver
 
 ## TODOS
 
+- [ ] Forgot password and reset password
 - [ ] ADD Error Validation
 - [ ] ADD Google Authentication
 - [ ] ADD Facebook Authentication
