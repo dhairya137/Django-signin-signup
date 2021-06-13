@@ -1,0 +1,18 @@
+{% include "header.html" %}
+
+<div class="container">
+  <h1>Dashboard</h1>
+
+  {% if user.is_authenticated %}
+  <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
+  <p>First Name - {{ user.first_name }}</p>
+  <p>Last Name - {{ user.last_name }}</p>
+  <p>Email - {{ user.email }}</p>
+
+  <a class="btn btn-warning" href="{% url 'logout' %}">Logout</a>
+  {% else %}
+  <p>Welcome, new user. Please log in.</p>
+  {% endif %}
+
+
+</div>
